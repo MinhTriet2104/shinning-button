@@ -1,0 +1,41 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+button {
+  margin-top: 100px;
+  background: #fff;
+  padding: 10px 15px;
+  color: #97335d;
+  font-size: 1.5em;
+  border: 2px solid #cc18cc;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: -5px 13px 19px 0px rgba(0, 0, 0, 0.29);
+          box-shadow: -5px 13px 19px 0px rgba(0, 0, 0, 0.29);
+}
+
+button:before {
+  position: absolute;
+  background: #fae952;
+  content: '';
+  height: 100px;
+  width: 50px;
+  left: -70%;
+  top: -65%;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  opacity: 0.6;
+}
+
+button:hover:before {
+  left: 120%;
+}
+/*# sourceMappingURL=styles.css.map */

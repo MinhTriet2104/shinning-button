@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin-top: 100px;
+    background: #fff;
+    padding: 10px 15px;
+    color: rgb(151, 51, 93);
+    font-size: 1.5em;
+    border: 2px solid rgb(204, 24, 204);
+    position: relative;
+    overflow: hidden;
+    box-shadow: -5px 13px 19px 0px rgba(0,0,0,0.29);
+
+    &:before {
+        position: absolute;
+        background: rgb(250, 233, 82);
+        content: '';
+        height: 100px;
+        width: 50px;
+        left: -70%;
+        top: -65%;
+        transform: rotate(20deg);
+        transition: all 0.6s;
+        opacity: 0.6;
+    }
+
+    &:hover {
+        &:before {
+            left: 120%;
+        }
+    }
+}
