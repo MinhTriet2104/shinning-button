@@ -1,2 +1,1 @@
-# shinning-button
-Shinning Button using SCSS
+# Shinning Button using SCSS
